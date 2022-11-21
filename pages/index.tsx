@@ -26,17 +26,17 @@ export default function Home() {
 	  return <div>Error</div>;
 	} else if (!isLoaded) {
 	  return <div>Loading...</div>;
-	// } else {
-	//   return (
-	// 	<div className={styles.container}>
-	// 	  {Array.from(products).map(store => (
-	// 		<div className={styles.main}>
-	// 		  <div>
-	// 			<h1 text={store.name} />
-	// 		  </div>
-	// 		</div>
-	// 	  ))}
-	// 	</div>
-	//   );
+	} else {
+	  return (
+		<div className={styles.container}>
+		  {Array.from(products).map(store => (
+			<div className={styles.main}>
+			  <div>
+				<h1 text={store.name} />
+			  </div>
+			</div>
+		  ))}
+		</div>
+	  );
 	}
 }
